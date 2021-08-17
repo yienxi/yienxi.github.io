@@ -17,7 +17,7 @@
 
 
 
-<title>category | Agu&#39;s Blog</title>
+<title>如何搭建Hexo博客 | Agu&#39;s Blog</title>
 
 
 
@@ -136,63 +136,152 @@
     }
 </script>
             <div class="main">
-                
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
 
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
 
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
 
-    <div class="container">
-        <div class="post-wrap categories">
-            <h2 class="post-title">-&nbsp;Categories&nbsp;-</h2>
-            <div class="categories-card">
-                
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">如何搭建Hexo博客</h1>
+            
+                <div class="post-meta">
                     
-                    <div class="card-item">
-                        <div class="categories">
-                            <a href="/categories/first/">
-                                <h3>
-                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
-                                    first
-                                </h3>
-                            </a>
-                            
-                                
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link"
-                                           href="/2021/08/14/hello-world/">Hello World</a>
-                                    </article>
-                                
-                            
-                            
-                        </div>
-                    </div>
-                
+                        Author: <a itemprop="author" rel="author" href="/">Agu</a>
                     
-                    <div class="card-item">
-                        <div class="categories">
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">
-                                <h3>
-                                    <i class="iconfont icon-category" style="padding-right:3px"></i>
-                                    技术学习
-                                </h3>
-                            </a>
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">August 17, 2021&nbsp;&nbsp;22:00:57</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
                             
-                                
-                                
-                                    <article class="archive-item">
-                                        <a class="archive-item-link"
-                                           href="/2021/08/17/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/">如何搭建Hexo博客</a>
-                                    </article>
-                                
+                                <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">技术学习</a>
                             
-                            
-                        </div>
-                    </div>
-                
-            </div>
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="我先留个空白，等我空了-就开始写，别急"><a href="#我先留个空白，等我空了-就开始写，别急" class="headerlink" title="我先留个空白，等我空了 就开始写，别急"></a>我先留个空白，等我空了 就开始写，别急</h3><blockquote>
+<p>你要先这样、再这样、然后那样最后再那样！</p>
+</blockquote>
 
         </div>
-    </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2021 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Hexo%E7%9B%B8%E5%85%B3/"># Hexo相关</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2021/08/14/hello-world/">Hello World</a>
+            
+        </section>
+
+
+    </article>
+</div>
 
             </div>
             <footer id="footer" class="footer">

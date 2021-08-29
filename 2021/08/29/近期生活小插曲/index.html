@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Agu">
+
+
+    <meta name="subtitle" content="好好学习，天天向上">
+
+
+    <meta name="description" content="聊天、沉思、项目、经验">
+
+
+
+<title>近期生活小插曲 | Agu&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/mianbao.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Agu&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" target="_blank" rel="noopener" href="https://imgtu.com/album/6PZjg">Photos</a>
+                
+                    <a class="menu-item" href="/friends">Friends</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Agu&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" target="_blank" rel="noopener" href="https://imgtu.com/album/6PZjg">Photos</a>
+                
+                    <a class="menu-item" href="/friends">Friends</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">近期生活小插曲</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Agu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">August 29, 2021&nbsp;&nbsp;10:38:35</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E7%94%9F%E6%B4%BB%E6%8F%92%E6%9B%B2/">生活插曲</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>从博客平台搭建完成后，就一直在构思如何规划、合理使用它，这是一个自我表达和提升的过程，果然知行合一很难！此处应该是个狗脸。</p>
+<p>直到最近看了《理想之城》后，内心又被触动了，是的，是又一次，毕竟表达职场的影视剧太多了，虽然剧情大致相同，主旨表达也相似，可见我多么的麻木。但这一次不一样，我再次回顾了过往、再次了权衡了当前、再次构想了未来！</p>
+<p>来自于即将迎来30岁的，还未感受到更大成功带来的喜悦，并且也即将迎来角色的转换（闺女），顿时焦虑感尤然心生</p>
+<p>哇，“感觉生活可期”</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/h88KL6"><img src="https://z3.ax1x.com/2021/08/29/h88KL6.md.jpg" alt="h88KL6.md.jpg"></a></p>
+<h2 id="来自《理想之城》的反思"><a href="#来自《理想之城》的反思" class="headerlink" title="来自《理想之城》的反思"></a>来自《理想之城》的反思</h2><p>职场怎么会相信眼泪呢？职场或许有对错，但更多的还是利弊权衡，古往今来帝王的权衡术演绎的再好不过了！我们确实在行事之前需要权衡再三，只不过会有两种思路，一种是在规矩范围内权衡利弊，事不关己高挂起，你推我我推你，带来的是一片和谐没有问题的画面；而另外一种则是颠覆，颠覆的是规矩（对我这个一直从事流程、项目管理的人来说太懂了）是认知、是突破现状！这样获取可以解决遇到的问题。请问这个难吗？或许很难，毕竟身在局中，想跳出来纵观局面不是那么简单的。所以这里就有个问题抛出了，如何持续做到保持初心和积极向上呢？</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/h8NOoV"><img src="https://z3.ax1x.com/2021/08/29/h8NOoV.md.jpg" alt="h8NOoV.md.jpg"></a></p>
+<p>当我尝试追寻这个问题时，发现越想越苦恼越复杂，因为千丝万缕，相互关联，想得多，把自己带入泥潭了！简直不敢想象自己思虑是这样的，后来想想很大可能是因为自己成年了吧……</p>
+<p>洗把脸、冲个咖啡、听个音乐，又想了想，问问自己，为什么要这么复杂？为什么要兼顾所有？为什么要完美？为什么你不说说当前遇到了什么问题？带来了什么影响？又为什么会发生这个问题？怎么解决呢？解决中又会遇到什么问题？有什么是可以借助外部资源搞定的呢？</p>
+<p>对呀，你为什么不追本溯源呢？解决问题的方法论太多了，那这个方式有什么优势吗？又有什么缺点吗？</p>
+<p>我想这是50%以上职场人都明白的道理，但为什么不能践行呢？</p>
+<p>是每一张造价表背后就是造价表，还是每一张造价表背后都有一张关系表呢？现实中，我们摆脱不了关系表，有人的地方就有江湖，而人在江湖又身不由己。</p>
+<p>哎呀，又回到了权衡这个词语上了，人要干脆点、果断点、不能患得患失，如果每天都在坚持做正确的事情对自己是不是会好点，不论是生活还是职场上!😊</p>
+<p>这里正确的事情定义可就需要好好斟酌了</p>
+<h2 id="失望的大猫"><a href="#失望的大猫" class="headerlink" title="失望的大猫"></a>失望的大猫</h2><p>作为大城市的“流浪猫”，一年一度的搬家是可以避免的事情，但我偏偏喜欢折腾</p>
+<p>刚搬入一个小区，巧了，就遇到一只真的流浪猫，本想收了它，但是想想吧，还是别冲动了，毕竟还没这个预算！</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/h8UEFK"><img src="https://z3.ax1x.com/2021/08/29/h8UEFK.md.jpg" alt="h8UEFK.md.jpg"></a></p>
+<p>一天天过去，看到的是这只流浪猫肚子圆鼓鼓的，原本以为是有身孕了！前两天才从一个爱心奶奶那听到，这货是被她喂肥的，早就绝育了^^  而且还是小区另外一栋住户给抛弃出来的，说的我内心那是一个不开心了，我滴小猫猫没了，原以为可以等到她生产呢！</p>
+<p>真是幸福的大猫，还有好心人可以投食！愿你继续胖下去吧！呵~臭猫</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/h8Uko6"><img src="https://z3.ax1x.com/2021/08/29/h8Uko6.md.jpg" alt="h8Uko6.md.jpg"></a></p>
+<h2 id="我"><a href="#我" class="headerlink" title="我"></a>我</h2><p>角色切换了</p>
+<p>年龄到三了</p>
+<p>职场竞争力下降了</p>
+<p>面临着如何打造终身职场竞争力，获得更好的生存机会</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>化繁为简、追本溯源、借助外力、终身成长！</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2021 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E5%BF%83%E6%83%85/"># 心情</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2021/08/17/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/">如何搭建Hexo博客</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Agu 2019-2021 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
